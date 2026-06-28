@@ -14,16 +14,18 @@ import Footer from './component/Footer'
 const App = () => {
   return (
     <div className='min-h-screen flex flex-col justify-between overflow-x-hidden'>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/About' element={<About/>}/>
-        <Route path='/Contact' element={<Contact/>}/>
-        <Route path='/Project' element={<Project/>}/>
-        <Route path='/Skill' element={<Skill/>}/>
-        <Route path='/Service' element={<Service/>}/>
-      </Routes>
-      <Footer/>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Project' element={<Project />} />
+          <Route path='/Skill' element={<Skill />} />
+          <Route path='/Service' element={<Service />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   )
 }
