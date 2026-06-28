@@ -4,7 +4,7 @@ const Skill = () => {
     return (
         <div className='flex flex-col gap-4 p-5 text-[#432818]'>
             <h1 className='text-4xl'>Use attractive cards</h1>
-            <div className='flex justify-between text-2xl'>
+            <div className='flex flex-col md:flex-row justify-between text-2xl'>
                 <div>
                     <h1 className='text-5xl font-bold'>Frontend</h1>
                     <ul className='flex flex-col gap-2 list-disc px-10'>

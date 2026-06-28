@@ -13,7 +13,7 @@ import Footer from './component/Footer'
 
 const App = () => {
   return (
-    <div className='h-screen'>
+    <div className='min-h-screen flex flex-col justify-between overflow-x-hidden'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
