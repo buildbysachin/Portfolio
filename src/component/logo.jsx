@@ -7,7 +7,7 @@ const Logo = () => {
         <img className='rounded-full w-36 h-36 border-2 border-b-emerald-950' src="https://raw.githubusercontent.com/zylos-ai/.github/master/assets/logo.png" alt="" />
     </div>
     <div>
-        <h1 className='text-4xl flex justify-center w-auto text-[#432818]'><i>Welcome on my website</i></h1>
+        <h1 className='text-4xl flex justify-center px-14 w-auto text-[#432818]'><i>Welcome on my website</i></h1>
     </div>
     </div>
   )
