@@ -11,7 +11,7 @@ const Navbar = () => {
                     <img className='h-full w-full rounded-full' src="https://raw.githubusercontent.com/zylos-ai/.github/master/assets/logo.png" alt="" />
                     <h1 className='text-4xl font-bold'>Zylos</h1>
                 </div>
-                <div className='hidden text-2xl underline gap-7 md:flex items-center justify-between'>
+                <div className='hidden text-2xl underline gap-7 lg:flex items-center justify-between'>
                     <Link to='/'>Home</Link>
                     <Link to='/About'>About</Link>
                     <Link to='/Skill'>Skills</Link>
@@ -19,14 +19,14 @@ const Navbar = () => {
                     <Link to='/Project'>Project</Link>
                     <Link to='/Contact'>Contact us</Link>
                 </div>
-                <div className='md:hidden flex'>
+                <div className='lg:hidden flex'>
                     <button onClick={() => { setIsopen(!isopen) }}>
                         {isopen ? <X /> : <TextAlignJustify />}
                     </button>
                 </div>
             </div>
             {isopen && (
-                <div className='md:hidden flex flex-col p-4 gap-3 underline'>
+                <div className='lg:hidden flex flex-col p-4 gap-3 underline'>
                     <Link to='/' onClick={()=> setIsopen(false)}>Home</Link>
                     <Link to='/About' onClick={()=> setIsopen(false)} >About</Link>
                     <Link to='/Skill' onClick={()=> setIsopen(false)}>Skill</Link>
