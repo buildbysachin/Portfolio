@@ -13,15 +13,15 @@ const About = () => {
             <h1 className='text-5xl font-bold mt-4'>My Journey</h1>
             <h2 className='text-4xl font-600 px-2 py-3'>Timeline</h2>
             <div className='flex'>
-                <div className=' px-5'>
+                <div className=' px-3'>
                     <h3 className='text-3xl'>2023</h3>
                     <p className='text-xl'>Started learning video editing</p>
                 </div>
-                <div className=' px-5'>
+                <div className=' px-3'>
                     <h3 className='text-3xl'>2024 & 25</h3>
                     <p className='text-xl'>Created YouTube channels and learned audience psychology</p>
                 </div>
-                <div className=' px-5'>
+                <div className=' px-3'>
                     <h3 className='text-3xl'>2026</h3>
                     <p className='text-xl'>Started learning Web Development</p>
                     <p className='text-xl' >Built my first responsive websites</p>
