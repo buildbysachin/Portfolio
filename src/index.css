@@ -7,6 +7,11 @@ body{
 }
 
 button{
-  background-color: #6F1D1B;
-  color: #FFE6A7;
+  background-color: #ffffff;
+  color: #111111;
+  font-weight: 700;
+}
+
+button:hover{
+  background-color: #c2b7b7;
 }
