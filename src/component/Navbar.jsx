@@ -7,7 +7,7 @@ const Navbar = () => {
     const [isopen, setIsopen] = useState(false)
     return (
         <nav>
-            <div className='flex justify-between bg-[#432818] text-[#FFE6A7] px-4 py-3'>
+            <div className='flex justify-between bg-[#770ab6d3] backdrop-blur-md text-[#FFE6A7] px-4 py-3'>
                 <div className='w-13 h-13 flex gap-2 items-center'>
                     <img className='h-full w-full rounded-full' src={logoImg} alt="logo" />
                     <h1 className='text-4xl font-bold'>Zylos</h1>

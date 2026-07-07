@@ -33,7 +33,7 @@ const Service = () => {
     return (
         <div>
             <Servicedetail ServiceData={ServiceData} />
-            <div className='text-[#432818] p-5 '>
+            <div className='p-5 '>
                 <h1 className='font-bold text-5xl'>Why Choose Me?</h1>
                 <ul className='text-3xl flex flex-col gap-5 m-5'>
                     <li>✅ Clean Code</li>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const Main = () => {
   const navigate = useNavigate()
   return (
-    <div className=' p-4 m-5 text-[#432818]'>
+    <div className=' p-4 m-5'>
       <h1 className='text-2xl font-extrabold'>Hi, I'm Sachin Mogra <br />
         I Build Modern Websites That Grow Businesses.</h1>
       <h3 className='text-lg'>Web Developer • UI Designer • Content Creator • Problem Solver</h3>

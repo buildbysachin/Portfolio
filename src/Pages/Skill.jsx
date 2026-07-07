@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skill = () => {
     return (
-        <div className='flex flex-col gap-4 p-5 text-[#432818]'>
+        <div className='flex flex-col gap-4 p-5'>
             <h1 className='text-4xl'>Use attractive cards</h1>
             <div className='flex flex-col md:flex-row justify-between text-2xl'>
                 <div>
