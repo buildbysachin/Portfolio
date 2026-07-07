@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { TextAlignJustify, X } from 'lucide-react';
+import logoImg from '../assets/Zyloslogo.webp'
 
 const Navbar = () => {
     const [isopen, setIsopen] = useState(false)
@@ -8,7 +9,7 @@ const Navbar = () => {
         <nav>
             <div className='flex justify-between bg-[#432818] text-[#FFE6A7] px-4 py-3'>
                 <div className='w-13 h-13 flex gap-2 items-center'>
-                    <img className='h-full w-full rounded-full' src="https://raw.githubusercontent.com/zylos-ai/.github/master/assets/logo.png" alt="" />
+                    <img className='h-full w-full rounded-full' src={logoImg} alt="logo" />
                     <h1 className='text-4xl font-bold'>Zylos</h1>
                 </div>
                 <div className='hidden text-2xl underline gap-7 lg:flex items-center justify-between'>
