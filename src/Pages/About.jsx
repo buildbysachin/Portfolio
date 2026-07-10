@@ -1,34 +1,37 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
+    const timeline = [
+        { year: "2023", title: "Video Production", desc: "Started learning advanced video editing and visual storytelling." },
+        { year: "2024 - 2025", title: "Content & Strategy", desc: "Created growing YouTube channels and mastered audience psychology." },
+        { year: "2026", title: "Web Engineering", desc: "Dived deep into Full-Stack development and built complex user interfaces." }
+    ];
+
     return (
-        <div className='p-5'>
-            <h1 className='text-5xl font-bold'>About Me</h1>
-            <div className='flex flex-col gap-7 text-xl mt-7'>
-                <p>Hello! I'm Sachin Mogra, a passionate web developer who enjoys transforming ideas into beautiful digital experiences.</p>
-                <p>My journey started with curiosity and a laptop. I learned web development through continuous practice, experimentation, and building real-world projects.</p>
-                <p>Apart from coding, I have experience creating YouTube content, solving mathematical problems, and constantly improving my skills.</p>
-                <p>I believe that consistency beats talent when talent doesn't stay consistent.</p>
+        <div className='max-w-4xl mx-auto px-4 py-12 text-zinc-300'>
+            <h2 className='text-4xl font-extrabold text-white mb-6 border-b pb-2 border-purple-500/35'>About Me</h2>
+            <div className='flex flex-col gap-5 text-lg leading-relaxed mb-12'>
+                <p>Hello! I'm <span className='text-white font-semibold'>Sachin Jain</span>, a passionate web developer focused on transforming ideas into scalable, beautiful digital experiences.</p>
+                <p>My tech journey is driven by genuine curiosity. Through continuous real-world practice and architecture design, I specialize in robust front-end ecosystems.</p>
+                <p>Beyond code, my experience as a YouTube content creator and a critical problem solver gives me a unique edge in understanding both product logic and user psychology.</p>
+                <blockquote className='border-l-4 border-purple-500 pl-4 italic text-zinc-400 my-2'>
+                    "Consistency beats talent when talent doesn't stay consistent."
+                </blockquote>
             </div>
-            <h1 className='text-5xl font-bold mt-4'>My Journey</h1>
-            <h2 className='text-4xl font-600 px-2 py-3'>Timeline</h2>
-            <div className='flex'>
-                <div className=' px-3'>
-                    <h3 className='text-3xl'>2023</h3>
-                    <p className='text-xl'>Started learning video editing</p>
-                </div>
-                <div className=' px-3'>
-                    <h3 className='text-3xl'>2024 & 25</h3>
-                    <p className='text-xl'>Created YouTube channels and learned audience psychology</p>
-                </div>
-                <div className=' px-3'>
-                    <h3 className='text-3xl'>2026</h3>
-                    <p className='text-xl'>Started learning Web Development</p>
-                    <p className='text-xl' >Built my first responsive websites</p>
-                </div>
+
+            <h2 className='text-3xl font-bold text-white mb-8'>My Journey</h2>
+            <div className='relative border-l border-zinc-800 ml-4 flex flex-col gap-8'>
+                {timeline.map((item, index) => (
+                    <div key={index} className='relative pl-6 group'>
+                        <div className='absolute left-2 top-2 w-3 h-3 rounded-full bg-zinc-700 group-hover:bg-purple-500 transition-colors'></div>
+                        <span className='text-sm font-bold text-purple-400 tracking-wider'>{item.year}</span>
+                        <h4 className='text-xl font-semibold text-white mt-0.5'>{item.title}</h4>
+                        <p className='text-zinc-400 mt-1 text-base'>{item.desc}</p>
+                    </div>
+                ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default About
+export default About;
